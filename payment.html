@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pembayaran</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="payment">
+        <div class="title">
+            <h2>Rincian Pembelian</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Daftar item yang dibeli -->
+        <div class="cart-details">
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Nama Item</th>
+                        <th>Jumlah</th>
+                        <th>Harga</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Rincian item akan dimuat di sini -->
+                </tbody>
+            </table>
+
+            <!-- Total Harga -->
+            <div class="total-price">
+                <h4>Total Pembelian: <span id="total-amount">$0</span></h4>
+            </div>
+
+            <!-- Tombol lanjutkan pembayaran -->
+            <div class="payment-button">
+                <button class="btn" id="proceed-payment">Lanjutkan Pembayaran</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notifikasi sukses -->
+    <div id="payment-success-notification" class="notification">
+        Pembayaran berhasil! Anda akan diarahkan kembali ke halaman utama.
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
